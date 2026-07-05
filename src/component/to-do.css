@@ -1,0 +1,98 @@
+/* Styles for To-Do component */
+.todo-app {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.todo-header {
+  margin-bottom: 0.75rem;
+}
+
+.todo-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.todo-sub {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.todo-form .todo-input,
+.todo-form .todo-date {
+  height: 44px;
+  border-radius: 8px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #fbfdff;
+  border: 1px solid #eef2f7;
+}
+
+.task-desc {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.task-desc.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+  opacity: 0.85;
+}
+
+.task-dead {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-left: 8px;
+}
+
+.task-actions .btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.empty {
+  color: #64748b;
+  padding: 0.75rem;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px dashed #e6eef8;
+}
+
+@media (max-width: 576px) {
+  .todo-card {
+    padding: 0.85rem;
+  }
+  .todo-title {
+    font-size: 1.25rem;
+  }
+}
